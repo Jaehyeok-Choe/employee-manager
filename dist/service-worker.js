@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/employee-manager/precache-manifest.5704357eadeff6c5c993884d09fa72c0.js"
+  "/employee-manager/precache-manifest.b92215b281181f558a9f92960464e57b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "employeemanager"});
