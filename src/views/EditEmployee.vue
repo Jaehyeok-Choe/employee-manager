@@ -57,23 +57,23 @@ export default {
         });
       });
   },
-  watch: {
-    $route: "fetchData",
-  },
+  // watch: {
+  //   $route: "fetchData",
+  // },
   methods: {
-    fetchData() {
-      db.collection("employee")
-        .where("employee_id", "==", this.$route.params.employee_id)
-        .get()
-        .then((querySnapshot) => {
-          querySnapshot.forEach((doc) => {
-            this.employee_id = doc.data().employee_id;
-            this.name = doc.data().name;
-            this.dept = doc.data().dept;
-            this.position = doc.data().position;
-          });
-        });
-    },
+    // fetchData() {
+    //   db.collection("employee")
+    //     .where("employee_id", "==", this.$route.params.employee_id)
+    //     .get()
+    //     .then((querySnapshot) => {
+    //       querySnapshot.forEach((doc) => {
+    //         this.employee_id = doc.data().employee_id;
+    //         this.name = doc.data().name;
+    //         this.dept = doc.data().dept;
+    //         this.position = doc.data().position;
+    //       });
+    //     });
+    // },
     updateEmployee() {
       db.collection("employee")
         .where("employee_id", "==", this.$route.params.employee_id)
